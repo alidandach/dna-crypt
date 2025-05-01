@@ -1,16 +1,16 @@
 package org.worldwide;
 
 public class Main {
-	public static void main(String[] args) throws Exception {
-		DnaCryptographySecure crypto = new DnaCryptographySecure();
-		String key = "StrongPassword123!";
-		String message = "This is a top secret message.";
+	public static void main(String[] args) {
+		DNAEncryption dna = new DNAEncryption();
+		String plaintext = "HELLO DNA";
+		String key = "key123";
 
-		String encryptedDna = crypto.encrypt(message, key);
-		String decryptedText = crypto.decrypt(encryptedDna, key);
+		String encrypted = dna.encrypt(plaintext, key);
+		String decrypted = dna.decrypt(encrypted, key);
 
-		System.out.println("Original:  " + message);
-		System.out.println("Encrypted (DNA): " + encryptedDna);
-		System.out.println("Decrypted: " + decryptedText);
+		System.out.println("Plain:     " + plaintext);
+		System.out.println("Encrypted: " + encrypted);
+		System.out.println("Decrypted: " + decrypted);
 	}
 }
