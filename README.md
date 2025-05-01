@@ -1,6 +1,6 @@
 # DNA Crypt
 
-🧬 A simple Java implementation of DNA-based cryptography, simulating the encoding and decoding of text using DNA nucleotide mapping.
+🧬 A simple Java implementation of DNA-based cryptography, simulating the encryption and decryption of text using DNA nucleotide mapping.
 
 ## 🔐 Overview
 
@@ -17,13 +17,6 @@ This project does **not** require any biological hardware or DNA synthesis — i
     - `11` → `T`
 
 Characters are converted to their 8-bit binary form, then split into 2-bit segments and mapped accordingly.
-
-## 🚀 Features
-
-- Encrypt any plain text into a simulated DNA sequence
-- Decrypt the DNA sequence back into readable text
-- Clean, readable Java implementation
-- Suitable for educational demos in cryptography and bioinformatics
 
 ## 📦 How to Use
 
